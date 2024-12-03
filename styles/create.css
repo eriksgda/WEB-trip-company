@@ -1,0 +1,104 @@
+.container {
+    margin-top: 20px;
+    margin-left: 270px;
+    width: calc(100% - 270px); 
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.container h1 {
+    font-size: 2rem;
+    color: #2d3748;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.container label {
+    font-size: 1rem;
+    color: #4a5568;
+    font-weight: bold;
+}
+
+.container input, 
+.container textarea, 
+.container button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.container textarea {
+    resize: vertical;
+}
+
+#error-message {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: red;
+}
+
+.container button {
+    background-color: #2b6cb0;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.container button:hover {
+    background-color: #3182ce;
+}
+
+#trip-response-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    max-width: 400px;
+    width: 90%; 
+    text-align: center;
+}
+
+#trip-response-modal .content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+#trip-response-modal .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #333;
+
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin-left: 0;
+        width: 100%;
+    }
+}
