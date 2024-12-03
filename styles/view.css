@@ -1,0 +1,210 @@
+.container {
+    margin: 20px auto;
+    margin-left: 270px; 
+    width: calc(100% - 300px); 
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.container h1, .container h2 {
+    color: #2d3748;
+    margin-bottom: 15px;
+}
+
+.container h1 {
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container h1 a {
+    color: #2b6cb0;
+    text-decoration: none;
+    font-size: 1.1rem; 
+    font-weight: bold; 
+}
+
+.container h1 a:hover {
+    text-decoration: underline;
+}
+
+.trip-participants {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.trip-table, .participants-table {
+    flex: 1;
+    background-color: #f7fafc;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    word-wrap: break-word;
+    table-layout: fixed;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: left;
+    font-size: 1rem;
+    color: #4a5568;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #2b6cb0;
+    color: white;
+}
+
+table tr:hover {
+    background-color: #e2e8f0;
+}
+
+table td a {
+    color: #2b6cb0;
+    text-decoration: none;
+    font-size: 1.1rem; 
+    font-weight: 500;
+}
+
+table td a:hover {
+    text-decoration: underline;
+}
+
+#modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 30px; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    max-width: 600px; 
+    width: 90%; 
+}
+
+#modal.show {
+    display: block;
+}
+
+#modal h2 {
+    margin: 0;
+    margin-bottom: 15px;
+    font-size: 1.5rem; 
+    color: #2d3748;
+}
+
+#modal .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.8rem; 
+    color: #333;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#modal form label {
+    font-size: 1rem; 
+    color: #4a5568;
+    display: block;
+    margin-bottom: 5px;
+}
+
+#modal form input[type="text"],
+#modal form input[type="email"],
+#modal form input[type="date"],
+#modal form textarea {
+    width: 100%;
+    padding: 12px; 
+    margin-bottom: 15px; 
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#modal form button {
+    background-color: #2b6cb0;
+    color: white;
+    padding: 12px 20px; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem; 
+    transition: background-color 0.3s;
+    display: block;
+    width: 100%;
+}
+
+#modal form button:hover {
+    background-color: #3182ce;
+}
+
+#response-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    max-width: 400px;
+    width: 90%; 
+    text-align: center;
+}
+
+
+#response-modal .content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+#response-modal .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #333;
+
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+#error-message {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: red;
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .trip-participants {
+        flex-direction: column;
+    }
+}
