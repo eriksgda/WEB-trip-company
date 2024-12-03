@@ -1,0 +1,70 @@
+aside {
+    width: 250px;
+    background-color: #2b6cb0;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-radius: 0 8px 8px 0;
+}
+
+aside h1 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    text-align: center;
+    border-bottom: white 2px solid;
+}
+
+#profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+#profile:hover {
+    background-color: #3182ce;
+}
+
+#profile img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+#profile p {
+    font-size: 1.4rem;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 10px 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #3182ce;
+}
+
+hr {
+    color: white;
+}
