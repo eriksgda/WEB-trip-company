@@ -54,7 +54,7 @@ Siga esses passos para configurar e rodar o projeto **Trip Company**:
    - Execute o seguinte comando para clonar o repositório:  
 
      ```bash
-     git clone https://github.com/eriksgda/somativa-web-2.git
+     git clone https://github.com/eriksgda/WEB-trip-company.git
      ```  
 
 2. **Configure o XAMPP**  
